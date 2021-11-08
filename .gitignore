@@ -1,6 +1,9 @@
 # Compiled class file
 *.class
-
+# Игнорировать папку .idea
+.idea
+# Игнорировать папку target
+target
 # Log file
 *.log
 
