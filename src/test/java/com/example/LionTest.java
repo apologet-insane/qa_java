@@ -9,7 +9,7 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(MockitoJUnitRunner.class)
-public class lionTest {
+public class LionTest {
     @Mock
     Feline feline = new Feline();
 

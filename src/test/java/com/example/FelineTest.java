@@ -4,7 +4,7 @@ import java.util.List;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-public class felineTest {
+public class FelineTest {
 
     @Test
     public void getFoodTest() throws Exception {
