@@ -5,15 +5,14 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import static org.junit.Assert.assertEquals;
 
-
-
 @RunWith(Parameterized.class)
-public class felineGetKittensTest {
-    final private int a;
+public class felineGetKittensWithParametresTest {
+
+    final private int kittensCount;
     final private int expectedKittensCount;
 
-    public felineGetKittensTest(int a, int expectedKittensCount) {
-        this.a = a;
+    public felineGetKittensWithParametresTest(int kittensCount, int expectedKittensCount) {
+        this.kittensCount = kittensCount;
         this.expectedKittensCount = expectedKittensCount;
     }
 
@@ -29,9 +28,7 @@ public class felineGetKittensTest {
     @Test
     public void felineGetKittensTest() {
         Feline feline = new Feline();
-        int actualKittensCount = feline.getKittens(a);
+        int actualKittensCount = feline.getKittens(kittensCount);
         assertEquals(expectedKittensCount, actualKittensCount) ;
     }
-
-
 }
